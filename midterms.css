@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqcjkawfK207bEypSM9ENM91mNeZFYlXAzXw&s);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container{
+    display: flex;
+    margin: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 80%;
+    height: 80%;
+    transition: all 0.5s ease;
+    padding: 10px;
+
+}
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0.5rem;
+}
+.badge{
+     padding: 20px;
+     margin: 10px;
+    border-radius: 20px;
+    justify-content: space-around;
+}
+
+
+.abra{
+    background-color: gold;
+}
+
+.bellsprout{
+    background-color: greenyellow;
+}
+.bullbasaur{
+    background-color: green;
+}
+.container{
+    flex-direction: column;
+}
+
+.charmander1{
+    background-color: red;
+}
