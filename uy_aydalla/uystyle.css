@@ -3,6 +3,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 20px;
+    background-color: #adf6e7;
 
 }
 
@@ -18,6 +19,13 @@ body {
     
 }
 
+button{
+    color:darkblue;
+    background-color: rgb(190, 235, 250);
+    border-radius: 10px;
+    border: #201919a7 solid;
+    margin-bottom: 10px;
+}
 
 
 .control-group {
