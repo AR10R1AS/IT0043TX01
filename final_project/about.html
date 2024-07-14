@@ -87,6 +87,7 @@
 
         .section-container {
             display: flex;
+            flex-direction: column;
             align-items: center;
             background-color: var(--background-color);
             padding: 20px;
@@ -95,15 +96,17 @@
         }
 
         .section-container img {
-            width: 250px; /* Increase the width */
-            height: 250px; /* Increase the height */
+            width: 100%;
+            height: auto;
+            max-width: 250px;
             object-fit: cover;
             border-radius: 10px;
-            margin-right: 20px;
+            margin-bottom: 20px;
         }
 
         .section-container div {
             max-width: 600px;
+            text-align: center;
         }
 
         h1 {
@@ -136,6 +139,47 @@
             color: var(--footer-text-color);
             text-align: center;
             padding: 10px;
+        }
+
+        @media (min-width: 768px) {
+            .section-container {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+
+            .section-container img {
+                margin-right: 20px;
+                margin-bottom: 0;
+            }
+
+            .section-container div {
+                text-align: left;
+            }
+        }
+
+        @media (max-width: 767px) {
+            header nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            header nav ul li {
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+
+            header nav ul li a {
+                font-size: 1.2em;
+            }
+
+            header {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .logo {
+                margin-bottom: 20px;
+            }
         }
     </style>
 </head>
@@ -171,7 +215,7 @@
             <img src="uy4.jpg" alt="Skills">
             <div>
                 <h3>Skills</h3>
-                <p>My only notable skills are basic coding, basic drawing, and character design. The only skill that I can be proud of is my past achievement of getting 7th place in a Tekken 7 tournament. But I hope to improve my coding and drawing skills in the near future. </p>
+                <p>My only notable skills are basic coding, basic drawing, and character design. The only skill that I can be proud of is my past achievement of getting 7th place in a Tekken 7 tournament. But I hope to improve my coding and drawing skills in the near future.</p>
             </div>
         </section>
     </main>
