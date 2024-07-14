@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(255, 13, 13);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        :root {
+            /* Color variables */
+            --background-color: rgb(1, 0, 0);
+            --text-color: #fdfdfd;
+            --header-background-color: #2d2c2c;
+            --header-text-color: #321313;
+            --link-color: #ffffff;
+            --link-hover-color: #c6a41c; /* Add hover color */
+            --footer-background-color: #230101;
+            --footer-text-color: #ffffff;
+            --social-link-color: #ffffff;
+            --h2-text-color: red; /* H2 text color */
+            --h3-text-color: rgb(151, 15, 15); /* H3 text color */
+
+            /* Font size variables */
+            --base-font-size: 1em;
+            --heading1-font-size: 2.5em;
+            --heading2-font-size: 2em;
+            --paragraph-font-size: 1.2em;
+            --social-link-font-size: 1.5em;
+        }
+
+        .logo {
+            width: 100px;
+            filter: var(--logo-color);
+        }
+
+        body {
+            font-size: var(--base-font-size);
+            color: var(--text-color);
+        }
+
+        header {
+            background-color: var(--header-background-color);
+            color: var(--header-text-color);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            color: var(--link-color);
+            text-decoration: none;
+            font-size: var(--social-link-font-size);
+            display: flex;
+            align-items: center;
+        }
+
+        header nav ul li a .icon {
+            margin-right: 5px;
+        }
+
+        header nav ul li a:hover {
+            color: var(--link-hover-color);
+        }
+
+        .section-container {
+            display: flex;
+            align-items: center;
+            background-color: var(--background-color);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .section-container img {
+            width: 250px; /* Increase the width */
+            height: 250px; /* Increase the height */
+            object-fit: cover;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .section-container div {
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: var(--heading1-font-size);
+        }
+
+        h2 {
+            font-size: var(--heading2-font-size);
+            color: var(--h2-text-color);
+        }
+
+        h3 {
+            font-size: var(--heading2-font-size);
+            color: var(--h3-text-color);
+        }
+
+        p {
+            font-size: var(--paragraph-font-size);
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            color: var(--social-link-color);
+            text-decoration: none;
+            font-size: var(--social-link-font-size);
+        }
+
+        footer {
+            background-color: var(--footer-background-color);
+            color: var(--footer-text-color);
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d7/Far_Easter_University_Logo.svg/1200px-Far_Easter_University_Logo.svg.png" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home icon"></i>Home</a></li>
+                <li><a href="about.html"><i class="fas fa-user icon"></i>About</a></li>
+                <li><a href="portfolio.html"><i class="fas fa-briefcase icon"></i>Portfolio</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope icon"></i>Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="education" class="section-container">
+            <img src="uy1.jpg" alt="Education">
+            <div>
+                <p>Hello, my name is Vanes Aaron Atinen Uy. I am 20 years old and was born in 2003. My ethnicity is half Filipino, half Chinese. I am a student at FEU Tech in my first year. My course is BSIT-AGD, still in my first year.</p>
+            </div>
+        </section>
+
+        <section id="experience" class="section-container">
+            <img src="uy3.jpg" alt="Experience">
+            <div>
+                <h3>Why Did I Choose To Pursue To Be A Software Developer</h3>
+                <p>I chose to be a software developer because of my passion for playing video games. Because in the near future, I want to be able to create a video game that I can be proud of and make the people who play it have the same experience as I did.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="section-container">
+            <img src="uy4.jpg" alt="Skills">
+            <div>
+                <h3>Skills</h3>
+                <p>My only notable skills are basic coding, basic drawing, and character design. The only skill that I can be proud of is my past achievement of getting 7th place in a Tekken 7 tournament. But I hope to improve my coding and drawing skills in the near future. </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/vanesaaron.uy/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/v.a.uy/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

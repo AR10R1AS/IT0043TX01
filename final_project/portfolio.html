@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --background-color: #35c637;
+            --text-color: #0712da;
+            --header-background-color: #237413;
+            --header-text-color: #0b2c88;
+            --link-color: #007bff;
+            --link-hover-color: #0056b3; /* Add hover color */
+            --footer-background-color: #333333;
+            --footer-text-color: #2a00fd;
+            --social-link-color: #2b00ff;
+
+            /* Font size variables */
+            --base-font-size: 1em;
+            --heading1-font-size: 2.5em;
+            --heading2-font-size: 2em;
+            --paragraph-font-size: 1.2em;
+            --social-link-font-size: 1.5em;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            font-size: var(--base-font-size);
+        }
+
+        header {
+            background-color: var(--header-background-color);
+            color: var(--header-text-color);
+            padding: 20px;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            color: var(--link-color);
+            text-decoration: none;
+            font-size: var(--social-link-font-size);
+        }
+
+        header nav ul li a .icon {
+            margin-right: 5px;
+        }
+
+        header nav ul li a:hover {
+            color: var(--link-hover-color);
+        }
+
+        .logo {
+            width: 100px;
+            filter: var(--logo-color);
+        }
+
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            background-color: #064a13;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: var(--heading1-font-size);
+            color: var(--header-text-color);
+        }
+
+        h2 {
+            font-size: var(--heading2-font-size);
+            color: var(--link-color);
+        }
+
+        p {
+            font-size: var(--paragraph-font-size);
+        }
+
+        .project {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        .project img {
+            width: 100%;
+            max-width: 1000px; 
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: var(--footer-background-color);
+            color: var(--footer-text-color);
+            text-align: center;
+            padding: 10px;
+        }
+
+        .social-links a {
+            color: var(--social-link-color);
+            margin: 0 5px;
+            text-decoration: none;
+            font-size: var(--social-link-font-size);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d7/Far_Easter_University_Logo.svg/1200px-Far_Easter_University_Logo.svg.png" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home icon" style="color: blue;"></i>Home</a></li>
+                <li><a href="about.html"><i class="fas fa-user icon" style="color: blue;"></i>About</a></li>
+                <li><a href="portfolio.html"><i class="fas fa-briefcase icon" style="color: blue;"></i>Portfolio</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope icon" style="color: blue;"></i>Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="portfolio">
+            <h1>Projects</h1>
+            <div class="project">
+                <h2>Project 1</h2>
+                <img src="t2.png" alt="Project 1">
+                <p>FEU Announcement</p>
+                <a href="https://ar10r1as.github.io/IT0043TX01/UY-tsa2.html" target="_blank">View Project 1</a>
+            </div>
+
+            <div class="project">
+                <h2>Project 2</h2>
+                <img src="t3.gif" alt="Project 2">
+                <p>Pokemon Datasheet</p>
+                <a href="https://ar10r1as.github.io/IT0043TX01/tsa3.html" target="_blank">View Project 2</a>
+            </div>
+
+            <div class="project">
+                <h2>Project 3</h2>
+                <img src="t4.gif" alt="Project 3">
+                <p>Pokemon Cards</p>
+                <a href="https://ar10r1as.github.io/IT0043TX01/uyandguevara_tsa4.html" target="_blank">View Project 3</a>
+            </div>
+
+            <div class="project">
+                <h2>Project 4</h2>
+                <img src="t6.gif" alt="Project 4">
+                <p>Character Descriptions</p>
+                <a href="https://ar10r1as.github.io/IT0043TX01/tsa6_uy_guevara/tsa6-uy-guevara.html" target="_blank">View Project 4</a>
+            </div>
+
+            <div class="project">
+                <h2>Project 5</h2>
+                <img src="t7.gif" alt="Project 5">
+                <p>Warframe</p>
+                <a href="https://vecpartum.github.io/IT0043TX01/TSA7/AYDALLA_UY_TSA7.html" target="_blank">View Project 5</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/vanesaaron.uy/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/v.a.uy/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
